@@ -1,0 +1,500 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #1e1e2f;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+}
+
+.logo {
+  font-size: 26px;
+  color: orange;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Bio under Name */
+.bio {
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: orange;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px; /* Sidebar width */
+  padding: 50px;
+  flex: 1;
+  background: #0d0d0d;
+}
+
+/* Home Section */
+.home-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  min-height: 100vh;
+}
+
+.text-section {
+  max-width: 600px;
+}
+
+.text-section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.highlighted {
+  color: orange;
+}
+
+.text-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: darkorange;
+}
+
+/* Image Section */
+.image-section img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid orange;
+}
+/* About Page Layout */
+.about-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.info-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.info-column {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 20px;
+}
+
+.info-column p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Skills Progress Bars */
+.skills {
+  margin-top: 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background: #333;
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress {
+  background: orange;
+  height: 10px;
+  border-radius: 5px;
+  transition: width 1s ease;
+}
+
+/* Button container for Download CV and Hire Me */
+.btn-container {
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: orange;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: darkorange;
+}
+
+/* Education and Experience Sections */
+.education-experience {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.education, .experience {
+  flex: 1;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.education h2, .experience h2 {
+  color: orange;
+  margin-bottom: 20px;
+}
+
+/* Timeline inside education & experience */
+.timeline {
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 2px solid orange;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: orange;
+  border-radius: 50%;
+}
+
+.date {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 5px;
+}
+/* Services Section */
+.services-section {
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: orange;
+  display: block;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Services Grid */
+.services-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+/* Service Card */
+.service-box {
+  background: #1b1b2f;
+}
+/* Portfolio Section */
+.portfolio-section {
+  padding: 50px 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+.project-box {
+  background: #1b1b2f;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover img {
+  transform: scale(1.05);
+}
+/* Contact Page Full Layout */
+.contact-page {
+  background: #f5f5f5;
+  padding: 50px 20px;
+  overflow-y: auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: orange;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-info-section h2 {
+  font-size: 2rem;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.contact-info-section p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.contact-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info-box {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.info-box i {
+  font-size: 30px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.info-box h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #777;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Send Email Section */
+.send-email-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.send-email-section h2 {
+  font-size: 2rem;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.send-email-section p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: orange;
+}
+
+/* Send Message Button */
+.contact-form .btn {
+  background-color: orange;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 200px;
+  align-self: center;
+}
+
+.contact-form .btn:hover {
+  background-color: darkorange;
+}
